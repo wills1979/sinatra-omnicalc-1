@@ -1,0 +1,21 @@
+<!-- /views/square_result.erb -->
+
+<h1>Square Results</h1>
+
+<dl>
+  <dt>
+    Number
+  </dt>
+  <dd>
+    <%=@number.to_s%>
+  </dd>
+
+  <dt>
+    Square
+  </dt>
+  <dd>
+    <%=@squared_number.to_s%>
+  </dd>
+</dl>
+
+<a href="/square/new">Calculate another square</a>

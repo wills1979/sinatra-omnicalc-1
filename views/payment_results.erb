@@ -1,0 +1,35 @@
+<!-- /views/payment_new.erb -->
+
+<h1>Payment Results</h1>
+
+<dl>
+  <dt>
+    APR
+  </dt>
+  <dd>
+    <%= @user_apr.to_fs(:percentage, {:precision => 4}) %>
+  </dd>
+
+  <dt>
+    Number of years
+  </dt>
+  <dd>
+    <%= @user_years.to_s %>
+  </dd>
+
+  <dt>
+    Principal
+  </dt>
+  <dd>
+    <%= @user_pv.to_fs(:currency) %>
+  </dd>
+
+  <dt>
+    Payment
+  </dt>
+  <dd>
+    <%= @user_payment.to_fs(:currency) %>
+  </dd>
+</dl>
+
+<a href="/square/new">Calculate another payment</a>
